@@ -15,6 +15,7 @@ int rottingOranges(vector<vector<int>>& grid) {
         for(int j=0; j<m; j++) {
             if(grid[i][j] == 2) {
                 q.push({{i,j}, 0});
+                vis[i][j] = true;
             }
         }
     }
